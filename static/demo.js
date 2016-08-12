@@ -14,16 +14,16 @@ angular.module('personalSite', ['ngRoute'])
     $routeProvider
 
             .when('/', {
-                templateUrl: 'homepage'
+                templateUrl: '/static/homepage.html'
             })
 
             .when('/resume', {
-                templateUrl: 'resume',
+                templateUrl: '/static/resume.html',
                 // controller: 'ResumeController'
             })
 
             .when('/blog', {
-                templateUrl: 'blog',
+                templateUrl: '/static/blog.html',
                 controller: 'BlogController',
                 resolve: {
                     posts: function (blogService){
